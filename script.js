@@ -15,6 +15,7 @@ function renderPokemons(responseAsJson) {
     responseAsJson.results.forEach(async (pokemon) => {
         const pokemonInfo = await loadPokemon(pokemon.url);
         const image = pokemonInfo.sprites.other.showdown.front_default;
+        
         contentRef.innerHTML += `<article class="article">
             <h2>#${pokemonInfo.id} ${pokemonInfo.name}</h2>
              <img src="${image}" alt="${pokemonInfo.name}">
