@@ -1,5 +1,5 @@
 async function fetchData() {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1&offset=0");
     const responseAsJson = await response.json();
     renderPokemons(responseAsJson);
 }
@@ -14,8 +14,8 @@ function renderPokemons(responseAsJson) {
 
     responseAsJson.results.forEach(async (pokemon) => {
         const pokemonInfo = await loadPokemon(pokemon.url);
-        const image = pokemonInfo.sprites.other.showdown.front_default;
-        
+        const image = pokemonInfo.sprites.other.dream_world.front_default;
+
         contentRef.innerHTML += `<article class="article">
             <h2>#${pokemonInfo.id} ${pokemonInfo.name}</h2>
              <img src="${image}" alt="${pokemonInfo.name}">
