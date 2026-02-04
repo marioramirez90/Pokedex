@@ -21,13 +21,21 @@ header {
 }
 footer {
     display: flex;
-    color: white;
+    color: rgba(255, 255, 255, 0.596);
     padding: 2px;
     text-align: center;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
     height: 100px;
-   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+   font-size: 10px;
+}
+
+footer img{
+    height: 36px;
 }
 main {
-    flex: 1; /* füllt den verfügbaren Platz zwischen Header und Footer */
+    flex: 1;
 }
