@@ -37,5 +37,8 @@ footer img{
     height: 36px;
 }
 main {
-    flex: 1;
+     display:flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
 }
