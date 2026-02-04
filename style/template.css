@@ -29,6 +29,7 @@
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 20px;
+
   
 }
 
@@ -57,6 +58,8 @@ filter: drop-shadow(0px 0px 4px #030303);
   right: 10px;      
   width: 30px;        
   height: 30px;
+   filter: drop-shadow(0px 0px 4px #030303b3);
+
 }
 
 .article-card-Image span{
@@ -64,8 +67,8 @@ filter: drop-shadow(0px 0px 4px #030303);
   top: 10px;         
   left: 10px;    
   color: white;  
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 
 }
 
