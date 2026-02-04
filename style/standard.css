@@ -29,5 +29,19 @@ header {
     
 }
 .navbar img{
-    height: 70px;
+    height: 80px;
+}
+
+.search-input{
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    color: white;
+    background: rgb(27, 27, 89);
+}
+.search-input::placeholder{
+    color: white;
 }
