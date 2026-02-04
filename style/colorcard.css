@@ -1,0 +1,9 @@
+.grass{
+    height: 200px;
+  width: 100%;
+  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+  background-color: #78C850;
+  background-image: linear-gradient(180deg, #78C850 0%, #4E8234 100%);
+}

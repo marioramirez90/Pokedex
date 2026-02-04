@@ -9,6 +9,7 @@ html, body {
     background-image: linear-gradient(rgb(14, 13, 43),  rgb(22, 5, 121) , rgb(46, 14, 227));
     display: flex;
     flex-direction: column;
+   
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     text-align: center;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
     height: 170px;
-    
+    margin-bottom: 70px;
 }
 footer {
     display: flex;
@@ -37,8 +38,8 @@ footer img{
     height: 36px;
 }
 main {
-     display:flex;
-    flex-wrap: wrap;
+    
     max-width: 1400px;
-    margin: 0 auto;
+  
+    
 }
