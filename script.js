@@ -1,5 +1,5 @@
 async function fetchData() {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0");
     const responseAsJson = await response.json();
     renderPokemons(responseAsJson);
 }

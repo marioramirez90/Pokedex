@@ -1,143 +1,79 @@
-.grass{
+.article-card-Image{
+  display: grid;
+  place-items: center;
   height: 200px;
   width: 100%;
   border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #8bd96a, #3f6f2a);
+
+}
+.grass{
+  background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
 }
 
 .fire{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #ff9a3c, #c0392b);
+  background-image: linear-gradient(to bottom left, #EE8130, #8C1D00);
 }
 
 .water{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #7fb3ff, #2c4aa3);
-}
-
-.bug{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #c3d94e, #6f7f12);
-}
-
-.normal{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #c2c2a3, #6e6e4a);
+  background-image: linear-gradient(to bottom left, #6390F0, #142F8C);
 }
 
 .electric{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #ffe066, #c9a400);
-}
-
-.psychic{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #ff7aa8, #b81e5d);
-}
-
-.rock{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #d1b85a, #7a6520);
-}
-
-.ghost{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #8a74b8, #3a2a5e);
-}
-
-.fighting{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #e04b3f, #6e120d);
-}
-
-.poison{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #c060c0, #5a1f5a);
-}
-
-.ground{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #f0d27a, #8f7422);
-}
-
-.fairy{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #ffb7c9, #b94a6a);
-}
-
-.flying{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #c0b0ff, #5a4aa8);
+  background-image: linear-gradient(to bottom left, #F7D02C, #9E7C00);
 }
 
 .ice{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #b8f0f0, #4f8c8c);
+  background-image: linear-gradient(to bottom left, #96D9D6, #1E6F7A);
+}
+
+.fighting{
+  background-image: linear-gradient(to bottom left, #C22E28, #5A0E0B);
+}
+
+.poison{
+  background-image: linear-gradient(to bottom left, #A33EA1, #4B0F4A);
+}
+
+.ground{
+  background-image: linear-gradient(to bottom left, #E2BF65, #7A5A1C);
+}
+
+.flying{
+  background-image: linear-gradient(to bottom left, #A98FF3, #4B3A9E);
+}
+
+.psychic{
+  background-image: linear-gradient(to bottom left, #F95587, #7C1036);
+}
+
+.bug{
+  background-image: linear-gradient(to bottom left, #A6B91A, #3E4A07);
+}
+
+.rock{
+  background-image: linear-gradient(to bottom left, #B6A136, #4F3F0B);
+}
+
+.ghost{
+  background-image: linear-gradient(to bottom left, #735797, #2A1744);
 }
 
 .dragon{
-  height: 200px;
-  width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-  background-image: linear-gradient(to bottom left, #8b5cff, #2e0fa3);
+  background-image: linear-gradient(to bottom left, #6F35FC, #1E0A6D);
+}
+
+.dark{
+  background-image: linear-gradient(to bottom left, #705746, #1F140C);
+}
+
+.steel{
+  background-image: linear-gradient(to bottom left, #B7B7CE, #4A4A5E);
+}
+
+.fairy{
+  background-image: linear-gradient(to bottom left, #D685AD, #6B2A47);
+}
+
+.normal{
+  background-image: linear-gradient(to bottom left, #A8A77A, #4F4F2C);
 }
