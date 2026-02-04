@@ -14,8 +14,6 @@
   transform: scale(1.05);
 }
 
-
-
 .article-main-content{
   display: flex;
   flex-direction: column;
@@ -24,9 +22,6 @@
   margin: 0 auto;
 }
 
-.article-card-Image img{
-    height: 120px;
-}
 
 .article-card-title{
   text-align: center;
@@ -36,4 +31,27 @@
   margin-bottom: 20px;
   
 }
+
+.article-card-Image {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.article-card-Image img:first-child {
+ height: 120px;
+  object-fit: cover;
+  
+}
+
+.article-card-Image img:last-child {
+  position: absolute; 
+  top: 10px;         
+  right: 10px;      
+  width: 30px;        
+  height: 30px;
+}
+
 
