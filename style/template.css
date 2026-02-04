@@ -5,7 +5,7 @@
   border: 5px solid #fff;
   overflow: hidden;
   color: var(--color-text);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+  box-shadow: rgba(0, 0, 0, 0.584) 0px 10px 20px,
               rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
   transition: all .2s ease-in-out;
@@ -43,8 +43,12 @@
 
 .pokemon-image {
  height: 120px;
-  object-fit: cover;
-  
+ object-fit: cover;
+ filter: drop-shadow(0px 0px 4px #030303b3);
+}
+.pokemon-image:hover{
+filter: drop-shadow(0px 0px 4px #030303);
+
 }
 
 .article-card-Image img:last-child {
