@@ -4,7 +4,7 @@ function pokemoncard(pokemonInfo, image) {
         <div class="article-card-Image  ${pokemonInfo.types[0].type.name}">
             <span class="article-card-id">#${pokemonInfo.id}</span>
             <img class="pokemon-image" src="${image}" alt="${pokemonInfo.name}">
-             <img src="assets/icon/whiteball.png" alt="${pokemonInfo.name}">
+             <img src="assets/icon/${pokemonInfo.types[0].type.name}.svg" alt="${pokemonInfo.name}">
         </div>
     </section>
     <section class="article-main-content">
