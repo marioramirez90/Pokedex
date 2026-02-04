@@ -16,9 +16,8 @@ function renderPokemons(responseAsJson) {
         const pokemonInfo = await loadPokemon(pokemon.url);
         const image = pokemonInfo.sprites.other.dream_world.front_default;
 
-        contentRef.innerHTML += `<article class="article">
-            <h2>#${pokemonInfo.id} ${pokemonInfo.name}</h2>
-             <img src="${image}" alt="${pokemonInfo.name}">
-        </article>`;
+        contentRef.innerHTML += pokemoncard(pokemonInfo, image);
     });
 }
+
+
