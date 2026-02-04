@@ -6,7 +6,7 @@
     padding: 20px;
     flex-direction: column;
     gap: 20px;
-    
+  
 }
 .navbar img{
     height: 80px;
@@ -24,4 +24,23 @@
 }
 .search-input::placeholder{
     color: white;
+}
+.input{
+    display: flex;
+    gap: 10px;
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.search-button img{
+    height: 20px;
+    
 }
