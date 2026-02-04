@@ -42,5 +42,9 @@
 }
 .search-button img{
     height: 20px;
-    
+    transition: all 0.3s ease;
+}
+.search-button img:hover{
+    height: 20px;
+    transform: rotate(360deg);
 }
