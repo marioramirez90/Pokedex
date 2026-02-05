@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="fetchData()">
+<body onload="init()">
     <header>
         <nav class="navbar">
             <div class="navbar-image">
@@ -19,7 +19,7 @@
             </div>
             <div class="input">
                 <input type="text" id="search-input" class="search-input" placeholder="Search Pokémon...">
-                <button onclick="filterPokemon()" class="search-button" id="search-button">
+                <button onclick="loadAndShowPokemon()" class="search-button" id="search-button">
                 <img class="pokemon-butten" src="assets/icon/2.svg"alt="pokeball-icon"></button>
             </div>
 
@@ -28,7 +28,7 @@
 
     <main>
         <section class="container" id="container"></section>
-
+         <button onclick="loadAndShowPokemon()">merladen</button>
     </main>
 
     <footer>

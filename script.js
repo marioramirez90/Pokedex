@@ -1,9 +1,18 @@
 let allPokemons = [];
+let currentPokemon = 0;
+let limit = 20
+
+async function init(){
+    await loadAndShowPokemon();
+    
+    
+}
 
 async function fetchData() {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${currentPokemon}`);
     const responseAsJson = await response.json();
-    renderPokemons(responseAsJson);
+    return responseAsJson;
+
 }
 
 async function loadPokemon(url) {  
@@ -39,6 +48,14 @@ async function renderPokemons(responseAsJson) {
             let image = pokemonInfo.sprites.other.dream_world.front_default;
             contentRef.innerHTML += pokemoncard(pokemonInfo, image);
         }
+    }
+
+    async function loadAndShowPokemon() {
+         let load = await fetchData();
+         currentPokemon += limit;
+         await renderPokemons(load);
+
+        
     }
 
 
