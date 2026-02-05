@@ -1,3 +1,5 @@
+let allPokemons = [];
+
 async function fetchData() {
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
     const responseAsJson = await response.json();
@@ -6,18 +8,31 @@ async function fetchData() {
 
 async function loadPokemon(url) {  
     const response = await fetch(url);
-    return await response.json();
+    const pokemonInfo = await response.json();
+
+    allPokemons.push(pokemonInfo)
+    return pokemonInfo;
+
 }
 
-function renderPokemons(responseAsJson) {
+async function renderPokemons(responseAsJson) {
     const contentRef = document.getElementById("container");
+    const pokemonRef = responseAsJson.results;
 
-    responseAsJson.results.forEach(async (pokemon) => {
+    for (let i = 0; i < pokemonRef.length; i++) {
+        const pokemon = pokemonRef[i];
         const pokemonInfo = await loadPokemon(pokemon.url);
         const image = pokemonInfo.sprites.other.dream_world.front_default;
 
         contentRef.innerHTML += pokemoncard(pokemonInfo, image);
-    });
-}
 
+        
+    }};
+
+    //responseAsJson.results.forEach(async (pokemon) => {
+     //   
+      //  
+
+      //  contentRef.innerHTML += pokemoncard(pokemonInfo, image);
+   
 
