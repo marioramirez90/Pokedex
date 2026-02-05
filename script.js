@@ -26,8 +26,20 @@ async function renderPokemons(responseAsJson) {
 
         contentRef.innerHTML += pokemoncard(pokemonInfo, image);
 
-        
     }};
+
+    function filterPokemon(){
+        const inputRef = document.getElementById("search-input");
+        const contentRef = document.getElementById("container")
+        const filterRef = allPokemons.filter(p => p.name.toLowerCase().includes(inputRef));
+        contentRef.innerHTML = "";
+
+        for (let index = 0; index < filterRef.length; index++) {
+            const image = pokemonInfo.sprites.other.dream_world.front_default;
+            contentRef.innerHTML += pokemoncard(pokemonInfo, image);
+        }
+    }
+
 
     //responseAsJson.results.forEach(async (pokemon) => {
      //   
