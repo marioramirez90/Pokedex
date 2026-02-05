@@ -29,13 +29,14 @@ async function renderPokemons(responseAsJson) {
     }};
 
     function filterPokemon(){
-        const inputRef = document.getElementById("search-input");
-        const contentRef = document.getElementById("container")
-        const filterRef = allPokemons.filter(p => p.name.toLowerCase().includes(inputRef));
+        let inputRef = document.getElementById("search-input").value.toLowerCase();
+        let contentRef = document.getElementById("container")
+        let filterRef = allPokemons.filter(p => p.name.toLowerCase().includes(inputRef));
         contentRef.innerHTML = "";
 
         for (let index = 0; index < filterRef.length; index++) {
-            const image = pokemonInfo.sprites.other.dream_world.front_default;
+            let pokemonInfo = filterRef[index];
+            let image = pokemonInfo.sprites.other.dream_world.front_default;
             contentRef.innerHTML += pokemoncard(pokemonInfo, image);
         }
     }
