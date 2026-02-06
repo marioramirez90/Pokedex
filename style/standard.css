@@ -41,6 +41,8 @@ main {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
     
     
   
