@@ -1,8 +1,11 @@
 let allPokemons = [];
 let currentPokemon = 0;
+let currentIndex = 0;
 let limit = 30
 
 const contentRef = document.getElementById("container");
+const dialogRef = document.getElementById("pokemon-dialog")
+const openPokemonRef = document.getElementById("show-pokemon")
 
 async function init() {
     await loadAndShowPokemon();
@@ -25,12 +28,14 @@ async function loadPokemon(url) {
 
 async function renderPokemons(responseAsJson) {
     const pokemonRef = responseAsJson.results;
+    
 
     for (let i = 0; i < pokemonRef.length; i++) {
         const pokemon = pokemonRef[i];
         const pokemonInfo = await loadPokemon(pokemon.url);
         contentRef.innerHTML += pokemoncard(pokemonInfo);
     }
+    
 };
 
 function filterPokemon() {
@@ -55,3 +60,14 @@ async function loadAndShowPokemon() {
     await renderPokemons(load);
 }
 
+function openDialog(index){
+    currentIndex = index;
+    let pokemonInfo = allPokemons[currentIndex];
+    openPokemonRef.innerHTML += DialogPokemoncard(pokemonInfo);
+    dialogRef.showModal();
+}
+
+function closeDialog(){
+    dialogRef.close()
+    openPokemonRef.innerHTML = "";
+}

@@ -10,7 +10,7 @@
 }
 .navbar img{
     height: 80px;
-      filter: drop-shadow(0px 0px 1px #faf8f893);
+      filter: drop-shadow(0px 0px 5px #faf8f8f4);
 
 }
 
@@ -89,3 +89,4 @@
 .d-none-button{
     display: none;      
 }
+
