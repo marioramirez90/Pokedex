@@ -22,10 +22,10 @@ header {
 }
 footer {
     display: flex;
-    color: rgba(255, 255, 255, 0.596);
+    color: rgba(255, 255, 255, 0.811);
     padding: 2px;
     text-align: center;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.851);
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,11 @@ footer img{
     height: 36px;
 }
 main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
     
-    max-width: 1400px;
+    
   
     
 }

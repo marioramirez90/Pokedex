@@ -8,6 +8,15 @@
 
 
 }
+.article-card-Image-no{
+  display: grid;
+  place-items: center;
+  height: 200px;
+  width: 100%;
+    border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
+
+}
 .grass{
   background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
 }

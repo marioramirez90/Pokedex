@@ -14,10 +14,18 @@ function pokemoncard(pokemonInfo) {
 }
 
 function notFound(){
-    return `   <section class="not_found">
-    <div><p>4</p></div>
-    <div><img src="assets/img/pokeball.png" alt="pokeball-logo"></div>
-    <div><p>4</p></div>
-</section>`
+    return `   
+    <article class="article-card ">
+    <section class="article-card-header">
+        <div class="article-card-Image-no ">
+            <span class="article-card-id">#404</span>
+            <img class="pokemon-image" src="assets/img/nofound.png" alt="pokeball-logo">
+        </div>
+    </section>
+    <section class="article-main-content">
+        <h2 class="article-card-title">Not Found</h2>
+    </section>
+</article>`
+    
  
 }

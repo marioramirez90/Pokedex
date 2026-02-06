@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar">
             <div class="navbar-image">
-                <img src="assets/img/Pokémon_logo.svg" alt="pokeball-image">
+                <img onclick="location.reload()" src="assets/img/Pokémon_logo.svg" alt="pokeball-image">
             </div>
             <div class="input">
                 <input type="text" id="search-input" class="search-input" placeholder="Search Pokémon...">
@@ -28,9 +28,9 @@
 
     <main>
         <section class="container" id="container"></section>
-         <button onclick="loadAndShowPokemon()">merladen</button>
+       
     </main>
-
+         <button class="load-pokemon-list" onclick="loadAndShowPokemon()">merladen</button>
     <footer>
         <img src="assets/icon/whiteball.png" alt="pokeball-icon">
         <span>© Mario-Ramirez 2026</span>
