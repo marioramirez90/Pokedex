@@ -67,7 +67,39 @@ function openDialog(index){
     dialogRef.showModal();
 }
 
+function leftArray() {
+    if (currentIndex > 0) {
+    currentIndex -= 1;
+    } else {
+    currentIndex = allPokemons.length - 1;
+ }
+ openPokemonRef.innerHTML = "";
+    openDialog(currentIndex);
+}
+
+function rightArray() {
+    if (currentIndex < allPokemons.length - 1) {
+        currentIndex += 1;
+    } else {
+        currentIndex = 0;
+    }
+    openPokemonRef.innerHTML = "";
+    openDialog(currentIndex);
+}
+
+
 function closeDialog(){
     dialogRef.close()
     openPokemonRef.innerHTML = "";
 }
+
+function openTab(tabName) {
+  let i;
+  let x = document.getElementsByClassName("name");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabName).style.display = "block";  
+}
+
+

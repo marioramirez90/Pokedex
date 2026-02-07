@@ -55,9 +55,9 @@ filter: drop-shadow(0px 0px 4px #030303);
 .pokemon-type-icon {
   position: absolute; 
   top: 10px;         
-  right: 45px;      
-  width: 30px;        
-  height: 30px;
+  right: 15px;      
+  width: 40px;        
+  height: 40px;
    filter: drop-shadow(0px 0px 4px #030303b3);
 
 }
@@ -133,9 +133,9 @@ position: absolute;
 .article-card-Image-dialog span{
   position: absolute; 
   top: 10px;         
-  left: 10px;    
+  left: 15px;    
   color: white;  
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
 
 }
@@ -157,3 +157,29 @@ position: absolute;
   margin: 0 auto;
 }
 
+.tab-bar{
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button{
+  width: 100px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: none;
+ 
+  
+  
+}
+.tab-button:active{
+  border-bottom: 4px solid var(--type-color);
+
+
+
+}
+.tab-button:hover{
+  border-bottom: 4px solid var(--type-color);
+
+
+
+}

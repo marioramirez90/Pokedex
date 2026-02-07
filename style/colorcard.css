@@ -28,23 +28,29 @@
 
 }
 .grass{
-  background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
+    background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
+  --type-color:#2F6B1F;
+  
 }
 
 .fire{
   background-image: linear-gradient(to bottom left, #EE8130, #8C1D00);
+  --type-color:#8C1D00;
 }
 
 .water{
   background-image: linear-gradient(to bottom left, #6390F0, #142F8C);
+  --type-color:#142F8C;
 }
 
 .electric{
   background-image: linear-gradient(to bottom left, #F7D02C, #9E7C00);
+  --type-color:#9E7C00;
 }
 
 .ice{
   background-image: linear-gradient(to bottom left, #96D9D6, #1E6F7A);
+  
 }
 
 .fighting{

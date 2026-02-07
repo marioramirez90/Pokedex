@@ -107,5 +107,57 @@ dialog::backdrop{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.dialog-header{
+    height: 5px;
+    box-shadow: none;
+
+}
+
+.close-dialog{
+    display: flex;
+    justify-content: center;
+   border-radius: 100%;
+   height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(18, 18, 63, 0.275);
+    transition: all 0.3s ease;
+}
+.close-dialog:hover{
+    width: 45px;
+    height: 45px;
+    transform: scale(1.2);
+    background-color:rgba(33, 33, 114, 0.568); ;
+}
+
+.dialog-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.dialog-arrow-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 100%;
+   height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(18, 18, 63, 0.275);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
+    transition: all 0.3s ease;
+}
+.dialog-arrow-button img{
+    height: 15px;
     
 }
+.dialog-arrow-button:hover{
+background-color: rgba(37, 37, 128, 0.275);
+transform: scale(1.3);
+}       

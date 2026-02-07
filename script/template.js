@@ -34,21 +34,47 @@ function DialogPokemoncard(pokemonInfo) {
     <section class="article-card-header">
     <div class="article-card-Image-dialog ${pokemonInfo.types[0].type.name}">
     <span class="article-card-id-dialog">#${pokemonInfo.id}</span>
-    <p class="pokemon-span-dialog">HP${pokemonInfo.stats[0].base_stat}</p>
+    <img class="pokemon-type-icon"  src="assets/icon/${pokemonInfo.types[0].type.name}.svg" alt="${pokemonInfo.types[0].type.name} type icon">
     <img class="pokemon-image-dialog" src="${pokemonInfo.sprites.other.dream_world.front_default}" alt="${pokemonInfo.name}"></div>
+    
     </section>
     <div class="card-content">
     <h2 class="article-card-title"> ${pokemonInfo.name}</h2>
-    
-    
-    <p class="card-text">HP</p>
+ 
+  <div class="tab-bar">
+  <button class="tab-button" onclick="openTab('about')">About</button>
+  <button class="tab-button " onclick="openTab('baseStats')">Base Stats</button>
+  <button class="tab-button" onclick="openTab('evolution')">Evolution</button>
+    <button class="tab-button" onclick="openTab('moves')">Moves</button>
+
+</div>
+
+<div id="about" class="name">
+  <p class="card-text">HP</p>
     <p class="card-text">Attack</p>
     <p class="card-text">Defense</p>
     <p class="card-text">Sp.Atk</p>
     <p class="card-text">Sp.Deg</p>
     <p class="card-text">Speed</p>
     <p class="card-text">Total</p>
-     <img class="pokemon-type-icon-dialog"  src="assets/icon/${pokemonInfo.types[0].type.name}.svg" alt="${pokemonInfo.types[0].type.name} type icon"></div>
+</div>
+
+<div id="baseStats" class="name" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="evolution" class="name" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<div id="moves" class="name" style="display:none">
+  <h2></h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+    
+    
     </section>
     </article>`;
 }
