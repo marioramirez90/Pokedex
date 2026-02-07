@@ -1,120 +1,113 @@
-.article-card-Image{
+.article-card-Image {
   display: grid;
   place-items: center;
   height: 200px;
   width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
   filter: drop-shadow(0px 0px 2px #030303b3);
-
-
 }
-.article-card-Image-dialog{
+.article-card-Image-dialog {
   display: grid;
   place-items: center;
   height: 300px;
   width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
   filter: drop-shadow(0px 0px 2px #030303b3);
-
-
 }
-.article-card-Image-no{
+.article-card-Image-no {
   display: grid;
   place-items: center;
   height: 200px;
   width: 100%;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
-
+  border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+  background-image: linear-gradient(to bottom left, #7ac74c, #2f6b1f);
 }
-.grass{
-    background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
-  --type-color:#7AC74C;
-  
+.grass {
+  background-image: linear-gradient(to bottom left, #7ac74c, #2f6b1f);
+  --type-color: #7ac74c;
 }
 
-.fire{
-  background-image: linear-gradient(to bottom left, #EE8130, #8C1D00);
-  --type-color:#EE8130;
+.fire {
+  background-image: linear-gradient(to bottom left, #ee8130, #8c1d00);
+  --type-color: #ee8130;
 }
 
-.water{
-  background-image: linear-gradient(to bottom left, #6390F0, #142F8C);
-  --type-color:#6390F0;
+.water {
+  background-image: linear-gradient(to bottom left, #6390f0, #142f8c);
+  --type-color: #6390f0;
 }
 
-.electric{
-  background-image: linear-gradient(to bottom left, #F7D02C, #9E7C00);
-  --type-color:#9E7C00;
+.electric {
+  background-image: linear-gradient(to bottom left, #f7d02c, #9e7c00);
+  --type-color: #9e7c00;
 }
 
-.ice{
-  background-image: linear-gradient(to bottom left, #96D9D6, #1E6F7A);
-  --type-color:#1E6F7A;
-
+.ice {
+  background-image: linear-gradient(to bottom left, #96d9d6, #1e6f7a);
+  --type-color: #1e6f7a;
 }
 
-.fighting{
-  background-image: linear-gradient(to bottom left, #C22E28, #5A0E0B);
-  --type-color:#C22E28;
+.fighting {
+  background-image: linear-gradient(to bottom left, #c22e28, #5a0e0b);
+  --type-color: #c22e28;
 }
 
-.poison{
-  background-image: linear-gradient(to bottom left, #A33EA1, #4B0F4A);
-  --type-color:#A33EA1;
+.poison {
+  background-image: linear-gradient(to bottom left, #a33ea1, #4b0f4a);
+  --type-color: #a33ea1;
 }
 
-.ground{
-  background-image: linear-gradient(to bottom left, #E2BF65, #7A5A1C);
-  --type-color:#E2BF65;
+.ground {
+  background-image: linear-gradient(to bottom left, #e2bf65, #7a5a1c);
+  --type-color: #e2bf65;
 }
 
-.flying{
-  background-image: linear-gradient(to bottom left, #A98FF3, #4B3A9E);
-  --type-color:#A98FF3;
+.flying {
+  background-image: linear-gradient(to bottom left, #a98ff3, #4b3a9e);
+  --type-color: #a98ff3;
 }
 
-.psychic{
-  background-image: linear-gradient(to bottom left, #F95587, #7C1036);
-  --type-color:#F95587;
+.psychic {
+  background-image: linear-gradient(to bottom left, #f95587, #7c1036);
+  --type-color: #f95587;
 }
 
-.bug{
-  background-image: linear-gradient(to bottom left, #A6B91A, #3E4A07);
-  --type-color:#A6B91A;
+.bug {
+  background-image: linear-gradient(to bottom left, #a6b91a, #3e4a07);
+  --type-color: #a6b91a;
 }
 
-.rock{
-  background-image: linear-gradient(to bottom left, #B6A136, #4F3F0B);
-  --type-color:#B6A136;
+.rock {
+  background-image: linear-gradient(to bottom left, #b6a136, #4f3f0b);
+  --type-color: #b6a136;
 }
 
-.ghost{
-  background-image: linear-gradient(to bottom left, #735797, #2A1744);
-  --type-color:#735797;
+.ghost {
+  background-image: linear-gradient(to bottom left, #735797, #2a1744);
+  --type-color: #735797;
 }
 
-.dragon{
-  background-image: linear-gradient(to bottom left, #6F35FC, #1E0A6D);
-  --type-color:#6F35FC;
+.dragon {
+  background-image: linear-gradient(to bottom left, #6f35fc, #1e0a6d);
+  --type-color: #6f35fc;
 }
 
-.dark{
-  background-image: linear-gradient(to bottom left, #705746, #1F140C);
-  --type-color:#705746;
+.dark {
+  background-image: linear-gradient(to bottom left, #705746, #1f140c);
+  --type-color: #705746;
 }
 
-.steel{
-  background-image: linear-gradient(to bottom left, #B7B7CE, #4A4A5E);
-  --type-color:#B7B7CE;
+.steel {
+  background-image: linear-gradient(to bottom left, #b7b7ce, #4a4a5e);
+  --type-color: #b7b7ce;
 }
 
-.fairy{
-  background-image: linear-gradient(to bottom left, #D685AD, #6B2A47);
-  --type-color:#D685AD;
+.fairy {
+  background-image: linear-gradient(to bottom left, #d685ad, #6b2a47);
+  --type-color: #d685ad;
 }
 
-.normal{
-  background-image: linear-gradient(to bottom left, #A8A77A, #4F4F2C);
-  --type-color:#A8A77A;
+.normal {
+  background-image: linear-gradient(to bottom left, #a8a77a, #4f4f2c);
+  --type-color: #a8a77a;
 }

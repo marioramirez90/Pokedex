@@ -41,8 +41,9 @@ function DialogPokemoncard(pokemonInfo) {
     <div class="card-content">
     <h2 class="article-card-title"> ${pokemonInfo.name}</h2>
     <div class="tab-bar">
-    <button class="tab-button" onclick="openTab('about')">About</button>
     <button class="tab-button " onclick="openTab('baseStats')">Base Stats</button>
+    <button class="tab-button" onclick="openTab('about')">About</button>
+   
     </div>
     <div id="about" class="name">
     <div class="about">
@@ -68,6 +69,7 @@ function DialogPokemoncard(pokemonInfo) {
     </span>
     </div>
     </div>
+    <div id="baseStats" class="name" style="display:none">
     <div class="progress-container">
     <span class="card-text">HP</span>
     <div class="progress">
@@ -105,7 +107,6 @@ function DialogPokemoncard(pokemonInfo) {
     </div>
     </div>
     </div>
-    <div id="baseStats" class="name" style="display:none">
     </section>
     </article>`;
 }

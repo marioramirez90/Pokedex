@@ -45,7 +45,8 @@ function filterPokemon() {
     contentRef.innerHTML = "";
     document.getElementById("load-pokemon-list").classList.add("d-none-button");
     if (inputText.length < 3) {
-        inputRef.value = "txt must be at least 3 characters";
+        inputRef.value = "text must be at least 3 characters";
+        contentRef.innerHTML += notFound()
     } else if (filterRef.length === 0) {
         contentRef.innerHTML += notFound()
     } else {
@@ -83,7 +84,7 @@ function rightArray() {
     } else {
         currentIndex = 0;
     }
-    openPokemonRef.innerHTML = "";
+   openPokemonRef.innerHTML = "";
     openDialog(currentIndex);
 }
 
