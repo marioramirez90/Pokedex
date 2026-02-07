@@ -40,7 +40,7 @@
 
 .water{
   background-image: linear-gradient(to bottom left, #6390F0, #142F8C);
-  --type-color:#142F8C;
+  --type-color:#6390F0;
 }
 
 .electric{
