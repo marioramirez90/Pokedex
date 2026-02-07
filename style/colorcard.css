@@ -29,13 +29,13 @@
 }
 .grass{
     background-image: linear-gradient(to bottom left, #7AC74C, #2F6B1F);
-  --type-color:#2F6B1F;
+  --type-color:#7AC74C;
   
 }
 
 .fire{
   background-image: linear-gradient(to bottom left, #EE8130, #8C1D00);
-  --type-color:#8C1D00;
+  --type-color:#EE8130;
 }
 
 .water{
@@ -50,57 +50,71 @@
 
 .ice{
   background-image: linear-gradient(to bottom left, #96D9D6, #1E6F7A);
-  
+  --type-color:#1E6F7A;
+
 }
 
 .fighting{
   background-image: linear-gradient(to bottom left, #C22E28, #5A0E0B);
+  --type-color:#C22E28;
 }
 
 .poison{
   background-image: linear-gradient(to bottom left, #A33EA1, #4B0F4A);
+  --type-color:#A33EA1;
 }
 
 .ground{
   background-image: linear-gradient(to bottom left, #E2BF65, #7A5A1C);
+  --type-color:#E2BF65;
 }
 
 .flying{
   background-image: linear-gradient(to bottom left, #A98FF3, #4B3A9E);
+  --type-color:#A98FF3;
 }
 
 .psychic{
   background-image: linear-gradient(to bottom left, #F95587, #7C1036);
+  --type-color:#F95587;
 }
 
 .bug{
   background-image: linear-gradient(to bottom left, #A6B91A, #3E4A07);
+  --type-color:#A6B91A;
 }
 
 .rock{
   background-image: linear-gradient(to bottom left, #B6A136, #4F3F0B);
+  --type-color:#B6A136;
 }
 
 .ghost{
   background-image: linear-gradient(to bottom left, #735797, #2A1744);
+  --type-color:#735797;
 }
 
 .dragon{
   background-image: linear-gradient(to bottom left, #6F35FC, #1E0A6D);
+  --type-color:#6F35FC;
 }
 
 .dark{
   background-image: linear-gradient(to bottom left, #705746, #1F140C);
+  --type-color:#705746;
 }
 
 .steel{
   background-image: linear-gradient(to bottom left, #B7B7CE, #4A4A5E);
+  --type-color:#B7B7CE;
 }
 
 .fairy{
   background-image: linear-gradient(to bottom left, #D685AD, #6B2A47);
+  --type-color:#D685AD;
 }
 
 .normal{
   background-image: linear-gradient(to bottom left, #A8A77A, #4F4F2C);
+  --type-color:#A8A77A;
 }
