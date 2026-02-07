@@ -10,6 +10,7 @@
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
+
 .article-card:hover{
   transform: scale(1.05);
 }
@@ -89,5 +90,70 @@ filter: drop-shadow(0px 0px 4px #030303);
 }
 .not_found img{
   height: 40px;
+}
+
+.article-card-dialog{
+   width: 420px;
+   height: 600px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.584) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  
+}
+.article-card-Image-dialog {
+  display: grid;
+  place-items: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pokemon-span-dialog {
+position: absolute; 
+  top: 10px;         
+  right: 10px;    
+  color: white;  
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.pokemon-image-dialog{
+   height: 220px;
+ object-fit: cover;
+ filter: drop-shadow(0px 0px 4px #030303b3);
+}
+
+.article-card-Image-dialog span{
+  position: absolute; 
+  top: 10px;         
+  left: 10px;    
+  color: white;  
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.pokemon-type-icon-dialog{
+  height: 30px;
+   border: none;
+  border-radius: 100px;
+  padding: 5px 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
