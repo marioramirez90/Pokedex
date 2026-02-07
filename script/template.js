@@ -45,19 +45,58 @@ function DialogPokemoncard(pokemonInfo) {
   <button class="tab-button" onclick="openTab('about')">About</button>
   <button class="tab-button " onclick="openTab('baseStats')">Base Stats</button>
   <button class="tab-button" onclick="openTab('evolution')">Evolution</button>
-    <button class="tab-button" onclick="openTab('moves')">Moves</button>
+  <button class="tab-button" onclick="openTab('moves')">Moves</button>
 
 </div>
 
 <div id="about" class="name">
-  <p class="card-text">HP</p>
-    <p class="card-text">Attack</p>
-    <p class="card-text">Defense</p>
-    <p class="card-text">Sp.Atk</p>
-    <p class="card-text">Sp.Deg</p>
-    <p class="card-text">Speed</p>
-    <p class="card-text">Total</p>
+<div class="progress-container">
+<span class="card-text">HP</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[0].base_stat}%">${pokemonInfo.stats[0].base_stat}HP</div>
 </div>
+</div>
+<div class="progress-container">
+<span class="card-text">Attack</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[1].base_stat}%">${pokemonInfo.stats[1].base_stat}HP</div>
+</div>
+</div>
+<div class="progress-container">
+<span class="card-text">Defense</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[2].base_stat}%">${pokemonInfo.stats[2].base_stat}HP</div>
+</div>
+</div>
+<div class="progress-container">
+<span class="card-text">Sp.Atk</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[3].base_stat}%">${pokemonInfo.stats[3].base_stat}HP</div>
+</div>
+</div>
+<div class="progress-container">
+<span class="card-text">Sp.Def</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[4].base_stat}%">${pokemonInfo.stats[4].base_stat}HP</div>
+</div>
+</div>
+<div class="progress-container">
+<span class="card-text">Sprrd</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[5].base_stat}%">${pokemonInfo.stats[5].base_stat}HP</div>
+</div>
+</div>
+<div class="progress-container">
+<span class="card-text">Total</span>
+<div class="progress">
+<div class="progress-bar" style="width:${pokemonInfo.stats[0].base_stat}%">${pokemonInfo.stats[0].base_stat}HP</div>
+</div>
+</div>
+</div>
+
+
+
+
 
 <div id="baseStats" class="name" style="display:none">
   <h2>Paris</h2>
