@@ -39,30 +39,30 @@ function DialogPokemoncard(pokemonInfo) {
     <img class="pokemon-image-dialog" src="${pokemonInfo.sprites.other.dream_world.front_default}" alt="${pokemonInfo.name}"></div>
     </section>
     <div class="card-content">
-    <h2 class="article-card-title"> ${pokemonInfo.name}</h2>
+    <h2 class="article-card-title-dialog"> ${pokemonInfo.name}</h2>
     <div class="tab-bar">
-    <button class="tab-button " onclick="openTab('baseStats')">Base Stats</button>
     <button class="tab-button" onclick="openTab('about')">About</button>
+    <button class="tab-button " onclick="openTab('baseStats')">Base Stats</button>
    
     </div>
     <div id="about" class="name">
     <div class="about">
-    <p>Height</p>
+    <h3>Height</h3>
     <span>${(pokemonInfo.height / 10).toFixed(2).replace('.', ',')} m</span>
     </div>
     <div class="about">
-    <p>Weight</p>
+    <h3>Weight</h3>
     <span>${(pokemonInfo.weight / 10).toFixed(2).replace('.', ',')} kg</span>
     </div>
     <div class="about">
-    <p>Abilities</p>
+    <h3>Abilities</h3>
     <div>
     <span class="about-span">${pokemonInfo.abilities[0].ability.name}</span>
     ${pokemonInfo.abilities[1] ? `, ${pokemonInfo.abilities[1].ability.name}` : ""}
     </div>
     </div>
     <div class="about">
-    <p>Type</p>
+    <h3>Type</h3>
     <span class="about-span-last">
     ${pokemonInfo.types[0].type.name}
     ${pokemonInfo.types[1] ? `, ${pokemonInfo.types[1].type.name}` : ""}
@@ -71,37 +71,37 @@ function DialogPokemoncard(pokemonInfo) {
     </div>
     <div id="baseStats" class="name" style="display:none">
     <div class="progress-container">
-    <span class="card-text">HP</span>
+    <h3 class="card-text">HP</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[0].base_stat}%">${pokemonInfo.stats[0].base_stat} HP</div>
     </div>
     </div>
     <div class="progress-container">
-    <span class="card-text">Attack</span>
+    <h3 class="card-text">Attack</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[1].base_stat}%">${pokemonInfo.stats[1].base_stat} ATK</div>
     </div>
     </div>
     <div class="progress-container">
-    <span class="card-text">Defense</span>
+    <h3 class="card-text">Defense</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[2].base_stat}%">${pokemonInfo.stats[2].base_stat} DEF</div>
     </div>
     </div>
     <div class="progress-container">
-    <span class="card-text">Sp.Atk</span>
+    <h3 class="card-text">Sp.Atk</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[3].base_stat}%">${pokemonInfo.stats[3].base_stat} SP.ATK</div>
     </div>
     </div>
     <div class="progress-container">
-    <span class="card-text">Sp.Def</span>
+    <h3 class="card-text">Sp.Def</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[4].base_stat}%">${pokemonInfo.stats[4].base_stat} SP.DEF</div>
     </div>
     </div>
     <div class="progress-container">
-    <span class="card-text">Speed</span>
+    <h3 class="card-text">Speed</h3>
     <div class="progress">
     <div class="progress-bar" style="width:${pokemonInfo.stats[5].base_stat}%">${pokemonInfo.stats[5].base_stat} SPD</div>
     </div>
