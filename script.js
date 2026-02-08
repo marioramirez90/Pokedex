@@ -28,8 +28,6 @@ async function loadPokemon(url) {
 
 async function renderPokemons(responseAsJson) {
     const pokemonRef = responseAsJson.results;
-    
-
     for (let i = 0; i < pokemonRef.length; i++) {
         const pokemon = pokemonRef[i];
         const pokemonInfo = await loadPokemon(pokemon.url);
@@ -53,7 +51,9 @@ function filterPokemon() {
         for (let index = 0; index < filterRef.length; index++) {
             let pokemonInfo = filterRef[index];
             contentRef.innerHTML += pokemoncard(pokemonInfo);
-     }}};
+            
+     }
+    }};
 
 async function loadAndShowPokemon() {
     let load = await fetchData();

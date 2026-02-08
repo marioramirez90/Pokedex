@@ -1,6 +1,6 @@
-function pokemoncard(pokemonInfo) {
+function pokemoncard(pokemonInfo,index) {
   return `
-    <article onclick="openDialog(${allPokemons.length - 1})" class="article-card ${pokemonInfo.types[0].type.name}">
+    <article onclick= "openDialog(${allPokemons.indexOf(pokemonInfo)})" class="article-card ${pokemonInfo.types[0].type.name}">
     <section class="article-card-header">
     <div class="article-card-Image  ${pokemonInfo.types[0].type.name}">
     <span class="article-card-id">#${pokemonInfo.id}</span>
