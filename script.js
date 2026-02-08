@@ -8,7 +8,9 @@ const dialogRef = document.getElementById("pokemon-dialog")
 const openPokemonRef = document.getElementById("show-pokemon")
 
 async function init() {
+    loadingSpinner()
     await loadAndShowPokemon();
+   
 }
 
 async function fetchData() {
@@ -37,35 +39,45 @@ async function renderPokemons(responseAsJson) {
 };
 
 function filterPokemon() {
+    loadingSpinner()
     let inputRef = document.getElementById("search-input");
     let inputText = inputRef.value.toLowerCase();
     let filterRef = allPokemons.filter(p => p.name.toLowerCase().includes(inputText));
     contentRef.innerHTML = "";
     document.getElementById("load-pokemon-list").classList.add("d-none-button");
+    
     if (inputText.length < 3) {
         inputRef.value = "text must be at least 3 characters";
         contentRef.innerHTML += notFound()
+       
     } else if (filterRef.length === 0) {
+       
         contentRef.innerHTML += notFound()
+       
+
     } else {
         for (let index = 0; index < filterRef.length; index++) {
             let pokemonInfo = filterRef[index];
             contentRef.innerHTML += pokemoncard(pokemonInfo);
-            
+           
      }
     }};
 
 async function loadAndShowPokemon() {
+    loadingSpinner()
     let load = await fetchData();
     currentPokemon += limit;
     await renderPokemons(load);
+   
 }
 
 function openDialog(index){
     currentIndex = index;
     let pokemonInfo = allPokemons[currentIndex];
+  
     openPokemonRef.innerHTML += DialogPokemoncard(pokemonInfo);
     dialogRef.showModal();
+    
 }
 
 function leftArray() {
@@ -102,5 +114,15 @@ function openTab(tabName) {
   }
   document.getElementById(tabName).style.display = "block";  
 }
+
+function loadingSpinner(){
+    document.getElementById("loading-spinner").classList.remove("show-spinner-none")
+    setTimeout(closeloadingSpinner, 1000);
+}
+
+function closeloadingSpinner(){
+    document.getElementById("loading-spinner").classList.add("show-spinner-none")
+}
+
 
 

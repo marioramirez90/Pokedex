@@ -20,6 +20,7 @@ header {
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
     height: 170px;
     margin-bottom: 70px;
+    width: 100%;
 }
 footer {
     display: flex;
@@ -33,19 +34,16 @@ footer {
     flex-direction: column;
     gap: 10px;
    font-size: 10px;
+   width: 100%;
 }
 
 footer img{
     height: 36px;
 }
 main {
+    max-width: 1440px;
+    margin: 0 auto 20px auto;
+    
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-left: 140px;
-    margin-right: 140px;
-    
-    
-  
-    
 }
