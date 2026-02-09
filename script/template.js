@@ -91,13 +91,13 @@ function DialogPokemoncard(pokemonInfo) {
     <div class="progress-container">
     <h3 class="card-text">Sp.Atk</h3>
     <div class="progress">
-    <div class="progress-bar" style="width:${pokemonInfo.stats[3].base_stat}%">${pokemonInfo.stats[3].base_stat} SP.ATK</div>
+    <div class="progress-bar" style="width:${pokemonInfo.stats[3].base_stat}%">${pokemonInfo.stats[3].base_stat} SP.A</div>
     </div>
     </div>
     <div class="progress-container">
     <h3 class="card-text">Sp.Def</h3>
     <div class="progress">
-    <div class="progress-bar" style="width:${pokemonInfo.stats[4].base_stat}%">${pokemonInfo.stats[4].base_stat} SP.DEF</div>
+    <div class="progress-bar" style="width:${pokemonInfo.stats[4].base_stat}%">${pokemonInfo.stats[4].base_stat} SP.D</div>
     </div>
     </div>
     <div class="progress-container">
