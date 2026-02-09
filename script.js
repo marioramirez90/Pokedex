@@ -79,10 +79,7 @@ function openDialog(index) {
   dialogRef.showModal();
   document.body.style.overflow = "hidden";
   dialogRef.addEventListener("click", e => e.target === dialogRef && closeDialog());
-  
 }
-
-
 
 function leftArray() {
   if (currentIndex > 0) {
