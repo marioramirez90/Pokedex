@@ -31,8 +31,7 @@ async function renderPokemons(responseAsJson) {
     const pokemon = pokemonRef[i];
     const pokemonInfo = await loadPokemon(pokemon.url);
     contentRef.innerHTML += pokemoncard(pokemonInfo);
-  }
-}
+  }}
 
 async function loadAndShowPokemon() {
   loadingSpinner();
@@ -55,18 +54,17 @@ function filterPokemon() {
     for (let index = 0; index < filterRef.length; index++) {
       let pokemonInfo = filterRef[index];
       contentRef.innerHTML += pokemoncard(pokemonInfo);
-       removeerrorText()
-    }}}
+       removErrorTex()}}}
 
 function errorText() {
-  inputRef.value = "text must be at least 3 characters";
+  inputRef.placeholder = "text must be at least 3 characters";
   contentRef.innerHTML += notFound();
-  document.getElementById("search-input").style.color = "red";
+  inputRef.classList.add("error");
   document.getElementById("search-input").style.fontSize = "9px" ;
   document.getElementById("search-input").style.border = "1px solid red";
 }
 
-function removeerrorText(){
+function removErrorText(){
   document.getElementById("search-input").style.color = "";
   document.getElementById("search-input").style.border = "";
   document.getElementById("search-input").style.fontSize = "" ;
@@ -81,7 +79,7 @@ function openDialog(index) {
   dialogRef.addEventListener("click", e => e.target === dialogRef && closeDialog());
 }
 
-function leftArray() {
+function backPokemon() {
   if (currentIndex > 0) {
     currentIndex -= 1;
   } else {
@@ -91,7 +89,7 @@ function leftArray() {
   openDialog(currentIndex);
 }
 
- async function rightArray() {
+ async function nextPokemon() {
   if (currentIndex < allPokemons.length - 1) {
     currentIndex += 1;
   } else {
@@ -109,10 +107,9 @@ function closeDialog() {
 }
 
 function openTab(tabName) {
-  let i;
-  let x = document.getElementsByClassName("name");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  let changeNavTabe = document.getElementsByClassName("name");
+  for (i = 0; i < changeNavTabe.length; i++) {
+    changeNavTabe[i].style.display = "none";
   }
   document.getElementById(tabName).style.display = "block";
 }
