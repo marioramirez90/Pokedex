@@ -43,13 +43,13 @@ function filterPokemon() {
   document.getElementById("load-pokemon-list").classList.add("d-none-button");
   if (inputText.length < 3) {
     errorText();
-    removeerrorText()
   } else if (filterRef.length === 0) {
-    contentRef.innerHTML += notFound();
+    contentRef.innerHTML += notFound() ;
   } else {
     for (let index = 0; index < filterRef.length; index++) {
       let pokemonInfo = filterRef[index];
       contentRef.innerHTML += pokemoncard(pokemonInfo);
+       removeerrorText()
     }}}
 
 function errorText() {
@@ -59,7 +59,7 @@ function errorText() {
   document.getElementById("search-input").style.border = "1px solid red";
 }
 
-function {
+function removeerrorText(){
   document.getElementById("search-input").style.color = "";
   document.getElementById("search-input").style.border = "";
 }
