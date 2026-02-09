@@ -50,7 +50,7 @@ function filterPokemon() {
   if (inputText.length < 3) {
     errorText();
   } else if (filterRef.length === 0) {
-    contentRef.innerHTML += loadingSpinner();notFound() ;
+    contentRef.innerHTML +=notFound() ;
   } else {
     for (let index = 0; index < filterRef.length; index++) {
       let pokemonInfo = filterRef[index];
@@ -62,12 +62,14 @@ function errorText() {
   inputRef.value = "text must be at least 3 characters";
   contentRef.innerHTML += notFound();
   document.getElementById("search-input").style.color = "red";
+  document.getElementById("search-input").style.fontSize = "9px" ;
   document.getElementById("search-input").style.border = "1px solid red";
 }
 
 function removeerrorText(){
   document.getElementById("search-input").style.color = "";
   document.getElementById("search-input").style.border = "";
+  document.getElementById("search-input").style.fontSize = "" ;
 }
 
 function openDialog(index) {
