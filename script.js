@@ -23,7 +23,6 @@ async function loadPokemon(url) {
   const pokemonInfo = await response.json();
   allPokemons.push(pokemonInfo);
   return pokemonInfo;
- 
 }
 
 async function renderPokemons(responseAsJson) {
@@ -33,6 +32,14 @@ async function renderPokemons(responseAsJson) {
     const pokemonInfo = await loadPokemon(pokemon.url);
     contentRef.innerHTML += pokemoncard(pokemonInfo);
   }
+}
+
+async function loadAndShowPokemon() {
+  loadingSpinner();
+  let load = await fetchData();
+  currentPokemon += limit;
+  await renderPokemons(load);
+  closeloadingSpinner()
 }
 
 function filterPokemon() {
@@ -61,14 +68,6 @@ function errorText() {
 function removeerrorText(){
   document.getElementById("search-input").style.color = "";
   document.getElementById("search-input").style.border = "";
-}
-
-async function loadAndShowPokemon() {
-  loadingSpinner();
-  let load = await fetchData();
-  currentPokemon += limit;
-  await renderPokemons(load);
-  closeloadingSpinner()
 }
 
 function openDialog(index) {
@@ -115,11 +114,7 @@ function openTab(tabName) {
 }
 
 function loadingSpinner() {
-  document
-    .getElementById("loading-spinner")
-    .classList.remove("show-spinner-none");
-    
-
+  document.getElementById("loading-spinner").classList.remove("show-spinner-none");
 }
 
 function closeloadingSpinner() {
