@@ -5,13 +5,14 @@
   font-family: "Roboto", sans-serif;
 
 }
-html, body {
+ body {
     min-height: 100vh;
     background-image: linear-gradient(rgb(14, 13, 43),  rgb(22, 5, 121) , rgb(46, 14, 227));
     display: flex;
     flex-direction: column;
    
 }
+
 
 header {
     color: white;
@@ -23,26 +24,29 @@ header {
     width: 100%;
 }
 footer {
-    display: flex;
-    color: rgba(255, 255, 255, 0.811);
-    padding: 2px;
-    text-align: center;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.851);
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-   font-size: 10px;
-   width: 100%;
+  display: flex;
+  color: rgba(255, 255, 255, 0.811);
+  padding: 2px;
+  text-align: center;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.851);
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+  width: 100%;
 }
+  
+
 
 footer img{
     height: 36px;
 }
 main {
-    max-width: 1440px;
-    margin: 0 auto 20px auto;
+    flex: 1;
+    max-width: 1400px;
+    margin: 0 auto;
     
     display: flex;
     flex-direction: column;

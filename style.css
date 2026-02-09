@@ -140,7 +140,21 @@ dialog::backdrop{
     gap: 20px;
     width: 100%;
 }
-.dialog-arrow-button{
+.dialog-arrow-button-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 100%;
+   height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(18, 18, 63, 0.275);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
+    transition: all 0.3s ease;
+}
+
+.dialog-arrow-button-left{
     display: flex;
     justify-content: center;
     align-items: center;

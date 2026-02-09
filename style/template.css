@@ -243,3 +243,97 @@
 .about-span-last {
   padding-left: 13px;
 }
+
+@media screen and (max-width: 590px) {
+  .article-card-Image-dialog {
+    /* display: grid; */
+    /* place-items: center; */
+    height: 220px;
+    width: 280px;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+.article-card-dialog {
+    width: 280px;
+    height: 440px;
+    /* background: #fff; */
+    /* border-radius: 20px; */
+    /* border: 5px solid #fff; */
+    /* overflow: hidden; */
+    /* color: var(--color-text); */
+    /* box-shadow: rgba(0, 0, 0, 0.584) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* cursor: pointer; */
+    /* transition: all 0.2s ease-in-out; */
+}
+.pokemon-image-dialog {
+    height: 120px;
+    /* object-fit: cover; */
+    /* filter: drop-shadow(0px 0px 4px #030303b3); */
+}
+.pokemon-type-icon_2 {
+    /* position: absolute; */
+    top: 45px;
+    /* right: 15px; */
+    width: 25px;
+    height: 25px;
+    /* filter: drop-shadow(0px 0px 4px #030303b3); */
+}
+.pokemon-type-icon {
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 15px; */
+    width: 25px;
+    height: 25px;
+    /* filter: drop-shadow(0px 0px 4px #030303b3); */
+}
+.article-card-title-dialog {
+     font-size: 18px; 
+    
+    /* text-transform: uppercase; */
+    /* margin-top: 10px; */
+   margin-bottom: 10px
+}
+
+.name{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 250px;
+    /* padding-right: 22px; */
+}
+.tab-bar {
+  
+  margin-top: -10px;
+    margin-bottom: -20px;
+}
+.dialog-arrow-button-left {
+    position: absolute;
+    left:90px;
+    top: 600px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-radius: 100%; */
+  
+    /* border: none; */
+    /* cursor: pointer; */
+    /* background-color: rgba(18, 18, 63, 0.275); */
+    /* box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764); */
+    /* transition: all 0.3s ease; */
+}
+.dialog-arrow-button-right {
+    position: absolute;
+    right:90px;
+    top: 600px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-radius: 100%; */
+  
+    /* border: none; */
+    /* cursor: pointer; */
+    /* background-color: rgba(18, 18, 63, 0.275); */
+    /* box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764); */
+    /* transition: all 0.3s ease; */
+}
+
+}
