@@ -9,7 +9,6 @@ const openPokemonRef = document.getElementById("show-pokemon");
 let inputRef = document.getElementById("search-input");
 
 async function init() {
-  loadingSpinner();
   await loadAndShowPokemon();
 }
 
@@ -24,6 +23,7 @@ async function loadPokemon(url) {
   const pokemonInfo = await response.json();
   allPokemons.push(pokemonInfo);
   return pokemonInfo;
+ 
 }
 
 async function renderPokemons(responseAsJson) {
@@ -36,7 +36,6 @@ async function renderPokemons(responseAsJson) {
 }
 
 function filterPokemon() {
-  loadingSpinner();
   let inputText = inputRef.value.toLowerCase();
   let filterRef = allPokemons.filter((p) =>p.name.toLowerCase().includes(inputText),);
   contentRef.innerHTML = "";
@@ -69,6 +68,7 @@ async function loadAndShowPokemon() {
   let load = await fetchData();
   currentPokemon += limit;
   await renderPokemons(load);
+  closeloadingSpinner()
 }
 
 function openDialog(index) {
@@ -118,7 +118,8 @@ function loadingSpinner() {
   document
     .getElementById("loading-spinner")
     .classList.remove("show-spinner-none");
-  setTimeout(closeloadingSpinner, 1000);
+    
+
 }
 
 function closeloadingSpinner() {
