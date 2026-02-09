@@ -1,37 +1,35 @@
-.show-spinner{
-     position: fixed;
+.show-spinner {
+  position: fixed;
   inset: 0;
-    background-image: linear-gradient(rgb(14, 13, 43),  rgb(22, 5, 121) , rgb(46, 14, 227));
+  background-image: linear-gradient(
+    rgb(14, 13, 43),
+    rgb(22, 5, 121),
+    rgb(46, 14, 227)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
- 
   visibility: visible;
 }
 
-.show-spinner-none{
-    opacity: 0;
+.show-spinner-none {
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
-    transition: opacity 0.5s ease, visibility 0.5s;
-
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
 }
 
 .loading-spinner {
-      animation: spin 1s linear infinite;
-
+  animation: spin 1s linear infinite;
 }
-.loading-spinner img{
-    height: 200px;
-    width: 200px;
-     filter: drop-shadow(0px 0px 14px #030303);
-
+.loading-spinner img {
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(0px 0px 14px #030303);
 }
-
-
-
-
 
 /* Spin Animation */
 @keyframes spin {

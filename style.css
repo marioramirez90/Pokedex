@@ -1,80 +1,78 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
-.navbar img{
-    height: 80px;
-      filter: drop-shadow(0px 0px 5px #faf8f8f4);
-
+.navbar img {
+  height: 80px;
+  filter: drop-shadow(0px 0px 5px #faf8f8f4);
 }
 
-.search-input{
-    background: none;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    height: 30px;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    background: rgb(27, 27, 89);
+.search-input {
+  background: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: rgb(27, 27, 89);
 }
-.search-input::placeholder{
-    color: white;
+.search-input::placeholder {
+  color: white;
 }
-.input{
-    display: flex;
-    gap: 10px;
-    max-width: 400px;
+.input {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
 }
-.search-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 100px;
-    border-radius: 8px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
-.search-button img{
-    height: 20px;
-    transition: all 0.3s ease;
+.search-button img {
+  height: 20px;
+  transition: all 0.3s ease;
 }
-.search-button img:hover{
-    height: 20px;
-    transform: rotate(360deg);
+.search-button img:hover {
+  height: 20px;
+  transform: rotate(360deg);
 }
-.container{
- display: flex;
- flex-wrap: wrap;
- gap: 20px;
- margin: 0 auto;
- justify-content: center;
- align-items: center;
- max-width: 1440px;
-}
-
-.load-pokemon-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-bottom: 50px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
 }
 
-.load-button{
+.load-pokemon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.load-button {
   position: relative;
   animation: mymove 5s infinite;
   width: 30px;
@@ -83,94 +81,99 @@
 }
 
 @keyframes mymove {
-  0%   {top: 0px;}
-  50%  {top: 20px;}
-  100% {top: 0px;}
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
-.d-none-button{
-    display: none;      
+.d-none-button {
+  display: none;
 }
 
-dialog{
-    border: none;
-    background: none;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+dialog {
+  border: none;
+  background: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
-dialog::backdrop{
-    background: rgba(0, 0, 0, 0.623);
-}
-
-.dialog-main{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.623);
 }
 
-.dialog-header{
-    height: 5px;
-    box-shadow: none;
+.dialog-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.close-dialog{
-   border-radius: 100%;
-   height: 40px;
-    width: 40px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(18, 18, 63, 0.275);
-    transition: all 0.3s ease;
-}
-.close-dialog:hover{
-    width: 45px;
-    height: 45px;
-    transform: scale(1.2);
-    background-color:rgba(33, 33, 114, 0.568); ;
+.dialog-header {
+  height: 5px;
+  box-shadow: none;
 }
 
-.dialog-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+.close-dialog {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 63, 0.275);
+  transition: all 0.3s ease;
 }
-.dialog-arrow-button-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   border-radius: 100%;
-   height: 40px;
-    width: 40px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(18, 18, 63, 0.275);
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
-    transition: all 0.3s ease;
+.close-dialog:hover {
+  width: 45px;
+  height: 45px;
+  transform: scale(1.2);
+  background-color: rgba(33, 33, 114, 0.568);
 }
 
-.dialog-arrow-button-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   border-radius: 100%;
-   height: 40px;
-    width: 40px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(18, 18, 63, 0.275);
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
-    transition: all 0.3s ease;
+.dialog-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
-.dialog-arrow-button img{
-    height: 15px;
-    
+.dialog-arrow-button-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 63, 0.275);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
+  transition: all 0.3s ease;
 }
-.dialog-arrow-button:hover{
-background-color: rgba(37, 37, 128, 0.275);
-transform: scale(1.3);
-}       
+
+.dialog-arrow-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 63, 0.275);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.764);
+  transition: all 0.3s ease;
+}
+.dialog-arrow-button img {
+  height: 15px;
+}
+.dialog-arrow-button:hover {
+  background-color: rgba(37, 37, 128, 0.275);
+  transform: scale(1.3);
+}
