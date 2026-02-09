@@ -88,11 +88,12 @@ function leftArray() {
   openDialog(currentIndex);
 }
 
-function rightArray() {
+ async function rightArray() {
   if (currentIndex < allPokemons.length - 1) {
     currentIndex += 1;
   } else {
-    currentIndex = 0;
+    await loadAndShowPokemon();
+    currentIndex += 1;
   }
   openPokemonRef.innerHTML = "";
   openDialog(currentIndex);
