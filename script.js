@@ -75,7 +75,7 @@ function removeerrorText(){
 function openDialog(index) {
   currentIndex = index;
   let pokemonInfo = allPokemons[currentIndex];
-  openPokemonRef.innerHTML += DialogPokemoncard(pokemonInfo);
+  openPokemonRef.innerHTML = DialogPokemoncard(pokemonInfo);
   dialogRef.showModal();
   document.body.style.overflow = "hidden";
 }
