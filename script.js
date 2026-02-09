@@ -38,22 +38,24 @@ async function renderPokemons(responseAsJson) {
 function filterPokemon() {
   loadingSpinner();
   let inputText = inputRef.value.toLowerCase();
-  let filterRef = allPokemons.filter((p) =>
-    p.name.toLowerCase().includes(inputText),
-  );
+  let filterRef = allPokemons.filter((p) =>p.name.toLowerCase().includes(inputText),);
   contentRef.innerHTML = "";
   document.getElementById("load-pokemon-list").classList.add("d-none-button");
   if (inputText.length < 3) {
-    inputRef.value = "text must be at least 3 characters";
-    contentRef.innerHTML += notFound();
+    errorText();
   } else if (filterRef.length === 0) {
     contentRef.innerHTML += notFound();
   } else {
     for (let index = 0; index < filterRef.length; index++) {
       let pokemonInfo = filterRef[index];
       contentRef.innerHTML += pokemoncard(pokemonInfo);
-    }
-  }
+    }}}
+
+function errorText() {
+  inputRef.value = "text must be at least 3 characters";
+  contentRef.innerHTML += notFound();
+  document.getElementById("search-input").style.color = "red";
+  document.getElementById("search-input").style.border = "1px solid red";
 }
 
 async function loadAndShowPokemon() {
