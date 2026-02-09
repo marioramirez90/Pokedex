@@ -200,11 +200,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15px;
+  height: 17px;
   background-color: var(--type-color);
   border-radius: 15px;
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 9px;
   color: black;
 }
 .name {
