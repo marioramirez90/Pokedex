@@ -50,7 +50,7 @@ function filterPokemon() {
   if (inputText.length < 3) {
     errorText();
   } else if (filterRef.length === 0) {
-    contentRef.innerHTML += notFound() ;
+    contentRef.innerHTML += loadingSpinner();notFound() ;
   } else {
     for (let index = 0; index < filterRef.length; index++) {
       let pokemonInfo = filterRef[index];
