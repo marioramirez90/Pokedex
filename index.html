@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="shortcut icon" href="assets/img/pokeball.png" type="image/x-icon">
     <link rel="stylesheet" href="style/colorcard.css">
     <link rel="stylesheet" href="style/template.css">
     <link rel="stylesheet" href="style/standard.css">
@@ -21,7 +22,7 @@
             <div class="input">
                 <input type="text" id="search-input" class="search-input" placeholder="Search Pokémon...">
                 <button onclick="filterPokemon()" class="search-button" id="search-button">
-                <img class="pokemon-butten" src="assets/icon/2.svg"alt="pokeball-icon"></button>
+                    <img class="pokemon-butten" src="assets/icon/2.svg" alt="pokeball-icon"></button>
             </div>
 
         </nav>
@@ -29,26 +30,31 @@
 
     <main>
         <div id="loading-spinner" class="show-spinner show-spinner-none">
-            <div  class="loading-spinner"><img src="assets/img/pokeball.png" alt=""></div>
+            <div class="loading-spinner"><img src="assets/img/pokeball.png" alt="pokeball"></div>
         </div>
         <section class="container" id="container"></section>
 
         <dialog id="pokemon-dialog">
             <section class="dialog-main">
-            <header class="dialog-header">
-                <button onclick="closeDialog()" class="close-dialog"><img src="assets/icon/Default.svg" alt="close-Button"></button>
-            </header>
-            <div class="dialog-section">
-             <button class="dialog-arrow-button-left" onclick="leftArray()"><img src="assets/icon/Union.svg" alt="left-icon"></button>
-            <section class="show-pokemon" id="show-pokemon"></section>
-            <button class="dialog-arrow-button-right" onclick="rightArray()"><img src="assets/icon/Arrow-Right.svg" alt="right-icon"></button>
+                <header class="dialog-header">
+                    <button onclick="closeDialog()" class="close-dialog"><img src="assets/icon/Default.svg"
+                            alt="close-Button"></button>
+                </header>
+                <div class="dialog-section">
+                    <button class="dialog-arrow-button-left" onclick="leftArray()"><img src="assets/icon/Union.svg"
+                            alt="left-icon"></button>
+                    <section class="show-pokemon" id="show-pokemon"></section>
+                    <button class="dialog-arrow-button-right" onclick="rightArray()"><img
+                            src="assets/icon/Arrow-Right.svg" alt="right-icon"></button>
             </section>
-             </div>
-         </dialog>
-       
+            </div>
+        </dialog>
+
     </main>
-         <button id="load-pokemon-list" class="load-pokemon-list" onclick="loadAndShowPokemon()"><img class="load-button" src="assets/icon/button_down.svg" alt="button-down"></button>
-         
+
+    <button id="load-pokemon-list" class="load-pokemon-list" onclick="loadAndShowPokemon()"><img class="load-button"
+            src="assets/icon/button_down.svg" alt="button-down"></button>
+
     <footer>
         <img class="button-down" src="assets/icon/whiteball.png" alt="pokeball-icon">
         <span>© Mario-Ramirez 2026</span>
@@ -59,5 +65,3 @@
 <script src="script.js"></script>
 
 </html>
-
-<div class="id"></div>

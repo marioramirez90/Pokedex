@@ -6,11 +6,11 @@ let limit = 30
 const contentRef = document.getElementById("container");
 const dialogRef = document.getElementById("pokemon-dialog")
 const openPokemonRef = document.getElementById("show-pokemon")
+let inputRef = document.getElementById("search-input");
 
 async function init() {
     loadingSpinner()
     await loadAndShowPokemon();
-   
 }
 
 async function fetchData() {
@@ -22,10 +22,8 @@ async function fetchData() {
 async function loadPokemon(url) {
     const response = await fetch(url);
     const pokemonInfo = await response.json();
-
     allPokemons.push(pokemonInfo)
     return pokemonInfo;
-
 }
 
 async function renderPokemons(responseAsJson) {
@@ -34,50 +32,38 @@ async function renderPokemons(responseAsJson) {
         const pokemon = pokemonRef[i];
         const pokemonInfo = await loadPokemon(pokemon.url);
         contentRef.innerHTML += pokemoncard(pokemonInfo);
-    }
-    
-};
+    }};
 
 function filterPokemon() {
     loadingSpinner()
-    let inputRef = document.getElementById("search-input");
     let inputText = inputRef.value.toLowerCase();
     let filterRef = allPokemons.filter(p => p.name.toLowerCase().includes(inputText));
     contentRef.innerHTML = "";
     document.getElementById("load-pokemon-list").classList.add("d-none-button");
-    
     if (inputText.length < 3) {
         inputRef.value = "text must be at least 3 characters";
         contentRef.innerHTML += notFound()
-       
     } else if (filterRef.length === 0) {
-       
         contentRef.innerHTML += notFound()
-       
-
     } else {
         for (let index = 0; index < filterRef.length; index++) {
             let pokemonInfo = filterRef[index];
-            contentRef.innerHTML += pokemoncard(pokemonInfo);
-           
-     }
-    }};
+            contentRef.innerHTML += pokemoncard(pokemonInfo); 
+     }}};
 
 async function loadAndShowPokemon() {
     loadingSpinner()
     let load = await fetchData();
     currentPokemon += limit;
     await renderPokemons(load);
-   
 }
 
 function openDialog(index){
     currentIndex = index;
     let pokemonInfo = allPokemons[currentIndex];
-  
     openPokemonRef.innerHTML += DialogPokemoncard(pokemonInfo);
     dialogRef.showModal();
-    
+    document.body.style.overflow = "hidden";
 }
 
 function leftArray() {
@@ -100,10 +86,10 @@ function rightArray() {
     openDialog(currentIndex);
 }
 
-
 function closeDialog(){
     dialogRef.close()
     openPokemonRef.innerHTML = "";
+    document.body.style.overflow = ""
 }
 
 function openTab(tabName) {
