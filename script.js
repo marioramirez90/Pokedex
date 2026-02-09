@@ -43,6 +43,7 @@ function filterPokemon() {
   document.getElementById("load-pokemon-list").classList.add("d-none-button");
   if (inputText.length < 3) {
     errorText();
+    removeerrorText()
   } else if (filterRef.length === 0) {
     contentRef.innerHTML += notFound();
   } else {
@@ -56,6 +57,11 @@ function errorText() {
   contentRef.innerHTML += notFound();
   document.getElementById("search-input").style.color = "red";
   document.getElementById("search-input").style.border = "1px solid red";
+}
+
+function {
+  document.getElementById("search-input").style.color = "";
+  document.getElementById("search-input").style.border = "";
 }
 
 async function loadAndShowPokemon() {
