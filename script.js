@@ -108,7 +108,7 @@ function closeDialog() {
 
 function openTab(tabName) {
   let changeNavTabe = document.getElementsByClassName("name");
-  for (i = 0; i < changeNavTabe.length; i++) {
+  for (let i = 0; i < changeNavTabe.length; i++) {
     changeNavTabe[i].style.display = "none";
   }
   document.getElementById(tabName).style.display = "block";
